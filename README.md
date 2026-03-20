@@ -8,8 +8,11 @@ These waypoints are converted GPS → UTM → map frame using robot_localization
 Internally, it keeps track of one active waypoint at a time (mission-level state).
 
 It publishes the current active global goal as:
+
 Topic: /global_gps_goal
+
 Type: geometry_msgs/PoseStamped
+
 Frame: map
 
 When the robot comes within ~1.0 m of the current goal (based on map → base_link TF),
